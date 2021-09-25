@@ -1,0 +1,49 @@
+nav {
+    max-width: 1440px;
+    background-color: $colorDarkBlueIntro;
+    .navigation-bar {
+        @include flex(row, space-between);
+        padding: 1.5rem;
+        .nav-logo {
+            width: 100px;
+        }
+        .nav-links {
+            @include flex(row, space-around);
+            gap: 1rem;
+            a {
+                text-decoration: none;
+                color: $colorWhite;
+                font-size: .8rem;
+                font-family: 'Raleway', sans-serif;
+            }
+        }
+    }
+}
+
+@media (min-width: 43em) {
+    nav {
+        .navigation-bar {
+            .nav-logo {
+                width: auto;
+            }
+            .nav-links {
+                a {
+                    font-size: 1rem;
+                }
+                gap: 3.5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 62em) {
+    nav {
+        .navigation-bar {
+            .nav-links {
+                a {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}

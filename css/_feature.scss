@@ -1,0 +1,55 @@
+.feature {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4.5rem;
+    .service {
+        @include flex(column, center);
+        img {
+            margin-bottom: 1rem;
+        }
+        .service-details {
+            color: $colorWhite;
+            text-align: center;
+            margin: 2rem;
+            h2 {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                font-weight: 700;
+            }
+            p {
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 43em) {
+    .feature {
+        margin: 5rem 7rem;
+    }
+}
+
+@media (min-width: 62em) {
+    .feature {
+        padding: 7rem 1rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        .service {
+            .service-details {
+                h2 {
+                    font-size: 1.5rem;
+                }
+                p {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 87em) {
+    .feature {
+        padding: 7rem 10rem;
+    }
+}

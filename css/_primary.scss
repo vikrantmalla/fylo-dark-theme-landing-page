@@ -1,0 +1,215 @@
+.hero {
+    background: url(../images/bg-curvy-mobile.svg), hsl(217, 28%, 15%);
+    background-repeat: no-repeat;
+    background-size: 100vw 30vh;
+    background-position: bottom;
+    line-height: 1.5;
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+    .hero-banner {
+        padding: 2rem 1.5rem;
+        .hero-img {
+            width: 100%;
+        }
+        .hero-details {
+            color: $colorWhite;
+            text-align: center;
+            h1 {
+                margin-bottom: 1rem;
+            }
+            p {
+                margin-bottom: 1.5rem;
+                line-height: 1.5;
+            }
+            .call-to-action {
+                button {
+                    background-color: $colorBlue;
+                    padding: 1.2rem 4rem;
+                    border: none;
+                    border-radius: 5rem;
+                    color: $colorWhite;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $colorCyan;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 43em) {
+    .hero {
+        background-size: 100vw 45vh;
+        .hero-banner {
+            padding: 2rem 5rem;
+            .hero-details {
+                text-align: center;
+                padding: 1rem 3rem;
+                h1 {
+                    margin-bottom: 1rem;
+                }
+                p {
+                    margin-bottom: 1rem;
+                }
+                .call-to-action {
+                    button {
+                        padding: 1.2rem 4rem;
+                        border-radius: 5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 62em) {
+    .hero {
+        background: url(../images/bg-curvy-desktop.svg), hsl(217, 28%, 15%);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100vw 45vh;
+        .hero-banner {
+            padding: 2rem 8rem;
+            .hero-details {
+                padding: 1rem 2rem;
+                h1 {
+                    font-size: 2.5rem;
+                    margin-bottom: 1.8rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                    line-height: 1.5;
+                    margin-bottom: 2.5rem;
+                }
+            }
+            .call-to-action {
+                form {
+                    button {
+                        font-size: 1rem;
+                        padding: 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 87em) {
+    .hero {
+        background: url(../images/bg-curvy-desktop.svg), hsl(217, 28%, 15%);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100vw 25vh;
+        .hero-banner {
+            padding: 0 12rem;
+            .hero-details {
+                padding: 1rem 10rem;
+                h1 {
+                    font-size: 2.5rem;
+                    margin-bottom: 1.8rem;
+                    width: 100%;
+                    padding: 0;
+                }
+                p {
+                    font-size: 1.2rem;
+                    line-height: 1.5;
+                    margin-bottom: 2.5rem;
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+            .call-to-action {
+                form {
+                    button {
+                        font-size: 1rem;
+                        padding: 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*
+.primary {
+    background: url(../images/bg-curvy-desktop.svg), $colorDarkBlueIntro;
+    background-repeat: no-repeat;
+    background-size: 100vw 30vh;
+    background-position: bottom;
+    line-height: 1.5;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    .banner {
+        display: grid;
+        gap: 1rem;
+        .illustration-1 {
+            img {
+                width: 100%;
+            }
+        }
+        .banner-details {
+            color: $colorWhite;
+            text-align: center;
+            h1 {
+                margin-bottom: 1rem;
+            }
+            p {
+                margin-bottom: 1rem;
+            }
+            .call-to-action {
+                button {
+                    background-color: $colorBlue;
+                    padding: 1.2rem 4rem;
+                    border: none;
+                    border-radius: 5rem;
+                    color: $colorWhite;
+                    &:hover {
+                        background-color: $colorCyan;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 43em) {
+    .primary {
+        margin: 2rem 5rem;
+        .banner {
+            gap: 1rem;
+            .banner-details {
+                text-align: center;
+                h1 {
+                    margin-bottom: 1rem;
+                }
+                p {
+                    margin-bottom: 1rem;
+                }
+                .call-to-action {
+                    button {
+                        padding: 1.2rem 4rem;
+                        border-radius: 5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 62em) {
+    .primary {
+        background: url(../images/bg-curvy-desktop.svg), $colorDarkBlueIntro;
+        .banner-details {
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                line-height: 1.5;
+            }
+        }
+    }
+}*/

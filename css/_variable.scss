@@ -1,0 +1,35 @@
+    /*Primary */
+    
+    $colorDarkBlueIntro: hsl(217, 28%, 15%);
+    $colorDarkBlueMain: hsl(218, 28%, 13%);
+    $colorDarkFooter: hsl(216, 53%, 9%);
+    $colorDarkBluetestimonials: hsl(219, 30%, 18%);
+    /*Neutral */
+    
+    $colorWhite: hsl(0, 0%, 100%);
+    /*Accent */
+    
+    $colorCyan: hsl(176, 68%, 64%);
+    $colorBlue: hsl(198, 60%, 50%);
+    $colorCLightRed: hsl(0, 100%, 63%);
+    @mixin flex($direction, $justify) {
+        display: flex;
+        flex-direction: $direction;
+        justify-content: $justify;
+        align-items: center;
+    }
+    
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+    }
+    
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+    
+    h2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+    }

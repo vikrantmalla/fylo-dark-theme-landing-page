@@ -1,0 +1,89 @@
+    .secondary {
+        padding: 0 2rem;
+        .description {
+            display: grid;
+            gap: 1.8rem;
+            color: $colorWhite;
+            text-align: left;
+            .illustration-2 {
+                img {
+                    width: 100%;
+                }
+            }
+            .sec-desc {
+                h1 {
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+                p {
+                    font-size: .8rem;
+                    margin-bottom: 1rem;
+                }
+                a {
+                    color: $colorCyan;
+                    text-decoration: none;
+                    border-bottom: .1rem solid $colorCyan;
+                    padding: .6rem 0;
+                    text-align: left;
+                    &::after {
+                        content: url(../images/icon-arrow.svg);
+                        margin-left: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (min-width: 43em) {
+        .secondary {
+            margin: 2rem 5rem;
+            .description {
+                gap: 1.8rem;
+                text-align: left;
+                .illustration-2 {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (min-width: 62em) {
+        .secondary {
+            margin: 2rem 4rem;
+            .description {
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                gap: 2rem;
+                .sec-desc {
+                    h1 {
+                        font-size: 2.5rem;
+                    }
+                    p {
+                        font-size: .8rem;
+                    }
+                    a {
+                        color: $colorCyan;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (min-width: 87em) {
+        .secondary {
+            margin: 2rem 6rem;
+            .description {
+                gap: 2rem;
+                .sec-desc {
+                    h1 {
+                        padding-right: 8rem;
+                    }
+                    p {
+                        padding-right: 6rem;
+                    }
+                }
+            }
+        }
+    }
