@@ -23,15 +23,25 @@
         .call-to-action {
             form {
                 @include flex(column, center);
-                input {
-                    padding: .8rem 2rem;
-                    border-radius: 5rem;
-                    border: none;
-                    margin-bottom: 1.5rem;
+                .email {
+                    @include flex(column, center);
+                    align-items: flex-start;
+                    input {
+                        padding: .8rem 2rem;
+                        border-radius: 2.1rem;
+                        border: none;
+                        margin-bottom: .5rem;
+                    }
+                    .error-message {
+                        color: $colorCLightRed;
+                        margin-bottom: 1.5rem;
+                        margin-left: 1rem;
+                        font-size: .8rem;
+                    }
                 }
                 button {
                     padding: .8rem 2rem;
-                    border-radius: 5rem;
+                    border-radius: 2.1rem;
                     border: none;
                     background-color: $colorBlue;
                     color: $colorWhite;
@@ -56,9 +66,21 @@
             .call-to-action {
                 form {
                     @include flex(row, center);
-                    input {
+                    .email {
+                        @include flex(column, center);
+                        align-items: flex-start;
+                        margin-top: .5rem;
                         flex: .5rem;
-                        margin-bottom: 0;
+                        input {
+                            margin-bottom: 0;
+                            margin-bottom: .5rem;
+                            width: 100%;
+                        }
+                        .error-message {
+                            margin-bottom: 0;
+                            margin-left: 1rem;
+                            font-size: .8rem;
+                        }
                     }
                     button {
                         margin-left: 1rem;

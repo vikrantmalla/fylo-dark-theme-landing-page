@@ -643,16 +643,42 @@ nav .navigation-bar .nav-links a {
           align-items: center;
 }
 
-.cta .cta-card .call-to-action form input {
+.cta .cta-card .call-to-action form .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.cta .cta-card .call-to-action form .email input {
   padding: .8rem 2rem;
-  border-radius: 5rem;
+  border-radius: 2.1rem;
   border: none;
+  margin-bottom: .5rem;
+}
+
+.cta .cta-card .call-to-action form .email .error-message {
+  color: #ff4242;
   margin-bottom: 1.5rem;
+  margin-left: 1rem;
+  font-size: .8rem;
 }
 
 .cta .cta-card .call-to-action form button {
   padding: .8rem 2rem;
-  border-radius: 5rem;
+  border-radius: 2.1rem;
   border: none;
   background-color: #339ecc;
   color: white;
@@ -688,11 +714,37 @@ nav .navigation-bar .nav-links a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .cta .cta-card .call-to-action form input {
+  .cta .cta-card .call-to-action form .email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: .5rem;
     -webkit-box-flex: .5rem;
         -ms-flex: .5rem;
             flex: .5rem;
+  }
+  .cta .cta-card .call-to-action form .email input {
     margin-bottom: 0;
+    margin-bottom: .5rem;
+    width: 100%;
+  }
+  .cta .cta-card .call-to-action form .email .error-message {
+    margin-bottom: 0;
+    margin-left: 1rem;
+    font-size: .8rem;
   }
   .cta .cta-card .call-to-action form button {
     margin-left: 1rem;

@@ -134,8 +134,12 @@
                 <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
                 <div class="call-to-action">
                     <form>
-                        <input type="text" placeholder="email@example.com" />
-                        <button>Get Started For Free</button>
+                        <div class="email">
+                            <input type="text" id="emailvalidation" name="email" placeholder="email@example.com" />
+                            <span class="error-message"></span>
+                        </div>
+
+                        <button class="cta__btn" type="submit" onclick='validateEmail();'>Get Started For Free</button>
                     </form>
                 </div>
             </div>
@@ -193,15 +197,8 @@
         </div>
     </footer>
 
-
+    <script src="main.js"></script>
 
 </body>
 
 </html>
-
-<!--  
-    <footer>
-
-    </footer>
-
-  -->
