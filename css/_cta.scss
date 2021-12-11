@@ -109,7 +109,7 @@
 
 @media (min-width: 87em) {
     .cta {
-        width: 50vw;
+        width: 60vw;
         .cta-card {
             h2 {
                 font-size: 2rem;
@@ -118,6 +118,12 @@
             p {
                 margin: 1rem 4rem;
                 margin-bottom: 1.5rem;
+            }
+            .call-to-action {
+                @include flex(row, center);
+                form {
+                    width: 80%;
+                }
             }
         }
     }

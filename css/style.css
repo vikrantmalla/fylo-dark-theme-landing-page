@@ -79,8 +79,21 @@ nav .navigation-bar .nav-links a {
 }
 
 @media (min-width: 62em) {
+  nav .navigation-bar {
+    padding: 2.5rem 3rem;
+  }
   nav .navigation-bar .nav-links a {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+  nav .navigation-bar .nav-links a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: 62em) {
+  nav .navigation-bar {
+    padding: 3rem 3.5rem;
   }
 }
 
@@ -433,6 +446,7 @@ nav .navigation-bar .nav-links a {
   }
   .secondary .description .sec-desc h1 {
     font-size: 2.5rem;
+    margin-bottom: 1.2rem;
   }
   .secondary .description .sec-desc p {
     font-size: .8rem;
@@ -453,7 +467,8 @@ nav .navigation-bar .nav-links a {
     padding-right: 8rem;
   }
   .secondary .description .sec-desc p {
-    padding-right: 6rem;
+    font-size: .9rem;
+    padding-right: 0;
   }
 }
 
@@ -522,7 +537,7 @@ nav .navigation-bar .nav-links a {
   width: 15%;
 }
 
-.reviews .review-card .review-hero .hero-details h3 {
+.reviews .review-card .review-hero .hero-details h2 {
   font-size: .9rem;
   margin-bottom: .2rem;
 }
@@ -574,7 +589,7 @@ nav .navigation-bar .nav-links a {
   .reviews .review-card:nth-child(3) {
     margin-left: 1rem;
   }
-  .reviews .review-card .review-hero .hero-details h3 {
+  .reviews .review-card .review-hero .hero-details h2 {
     font-size: .8rem;
   }
   .reviews .review-card .review-hero .hero-details p {
@@ -585,16 +600,23 @@ nav .navigation-bar .nav-links a {
 
 @media (min-width: 87em) {
   .reviews {
-    margin: 8rem 3rem 4rem 3rem;
+    margin: 8rem 6rem 5rem 6rem;
+  }
+  .reviews::after {
+    top: -45px;
+    left: -15px;
   }
   .reviews .review-card p {
-    font-size: 1rem;
+    font-size: .9rem;
   }
-  .reviews .review-card .review-hero .hero-details h3 {
-    font-size: 1rem;
+  .reviews .review-card .review-hero img {
+    width: 10%;
+  }
+  .reviews .review-card .review-hero .hero-details h2 {
+    font-size: .9rem;
   }
   .reviews .review-card .review-hero .hero-details p {
-    font-size: .8rem;
+    font-size: .7rem;
   }
 }
 
@@ -767,7 +789,7 @@ nav .navigation-bar .nav-links a {
 
 @media (min-width: 87em) {
   .cta {
-    width: 50vw;
+    width: 60vw;
   }
   .cta .cta-card h2 {
     font-size: 2rem;
@@ -776,6 +798,24 @@ nav .navigation-bar .nav-links a {
   .cta .cta-card p {
     margin: 1rem 4rem;
     margin-bottom: 1.5rem;
+  }
+  .cta .cta-card .call-to-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cta .cta-card .call-to-action form {
+    width: 80%;
   }
 }
 
@@ -914,6 +954,11 @@ footer .footer-wrapper .social-media .circle {
   height: 2.5rem;
   width: 2.5rem;
   text-decoration: none;
+}
+
+footer .footer-wrapper .social-media .circle:hover {
+  border: 0.06rem solid #65e2d9;
+  color: #65e2d9;
 }
 
 footer .attribution {

@@ -69,6 +69,10 @@
                     height: 2.5rem;
                     width: 2.5rem;
                     text-decoration: none;
+                    &:hover {
+                        border: .06rem solid $colorCyan;
+                        color: $colorCyan;
+                    }
                 }
             }
         }

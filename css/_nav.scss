@@ -39,11 +39,24 @@ nav {
 @media (min-width: 62em) {
     nav {
         .navigation-bar {
+            padding: 2.5rem 3rem;
             .nav-links {
                 a {
-                    font-size: 1.4rem;
+                    font-size: 1.2rem;
+                    &:hover {
+                        font-weight: 700;
+                        text-decoration: underline;
+                    }
                 }
             }
+        }
+    }
+}
+
+@media (min-width: 62em) {
+    nav {
+        .navigation-bar {
+            padding: 3rem 3.5rem;
         }
     }
 }
